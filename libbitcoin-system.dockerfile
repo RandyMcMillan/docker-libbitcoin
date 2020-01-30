@@ -1,12 +1,12 @@
-## USAGE: $ DOCKER_BUILDKIT=1 docker build --pull --no-cache -f libbitcoin-system.dockerfile -t libbitcoin-system .
+## USAGE: $ DOCKER_BUILDKIT=1 docker build --pull -f libbitcoin-system.dockerfile -t docker-libbitcoin:system .
 ## OR
 ## $ docker pull buildpack-deps
 ## $ docker build - <  libbitcoin-system.dockerfile
 ## AND
 ## $ docker run -it [container id]
 
-#Maintainer: Randy McMillan (@RandyMcMillan)
-#GitRepo: https://github.com/RandyMcMillan/bitcoin-core-review.git
+#Maintainer: randymcmillan (@RandyMcMillan)
+#GitRepo: https://github.com/RandyMcMillan/docker-libbitcoin.git
 
 FROM buildpack-deps:buster
 
